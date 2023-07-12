@@ -13,6 +13,11 @@ connectDB();
 
 const app = express();
 
+const cors = require('cors');
+app.use(cors({
+  origin: ['https://localhost:3000', 'https://glittery-pasca-60dcc8.netlify.app']
+}));
+
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
