@@ -112,10 +112,19 @@ const updateUserProfile = asyncHandler(async (req, res) => {
     throw new Error('User not found');
   }
 });
+
+
+// const getHola = asyncHandler(async (req, res) => {
+//   res.json({"a":"aa"})
+// });
+
+
+
 export {
   authUser,
   registerUser,
   logoutUser,
   getUserProfile,
   updateUserProfile,
+  getHola
 };

@@ -17,7 +17,7 @@ const app = express();
 
 
 app.use(cors({
-  origin: ['https://localhost:3000', 'https://glittery-pasca-60dcc8.netlify.app'],
+  origin: ['https://localhost:3000', 'https://glittery-pasca-60dcc8.netlify.app','https://mern-f1.onrender.com'],
   methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }));
 
@@ -27,6 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.use('/api/users', userRoutes);
+
 
 if (process.env.NODE_ENV === 'production') {
   const __dirname = path.resolve();
