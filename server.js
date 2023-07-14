@@ -17,7 +17,8 @@ const app = express();
 
 
 app.use(cors({
-  origin: ['https://localhost:3000', 'https://glittery-pasca-60dcc8.netlify.app','https://mern-f1.onrender.com'],
+  //origin: ['https://localhost:3000', 'https://glittery-pasca-60dcc8.netlify.app','https://mern-f1.onrender.com'],
+  origin: ['*'],
   methods: ['GET','POST','DELETE','UPDATE','PUT','PATCH']
 }));
 
