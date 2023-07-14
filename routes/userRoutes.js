@@ -19,6 +19,6 @@ router
   .get(protect, getUserProfile)
   .put(protect, updateUserProfile);
   
-// router.get('/hola', getHola);
+router.get('/hola', getHola);
 
 export default router;
