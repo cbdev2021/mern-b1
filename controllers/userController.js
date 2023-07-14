@@ -114,9 +114,9 @@ const updateUserProfile = asyncHandler(async (req, res) => {
 });
 
 
-// const getHola = asyncHandler(async (req, res) => {
-//   res.json({"a":"aa"})
-// });
+const getHola = asyncHandler(async (req, res) => {
+  res.json({"a":"aa"})
+});
 
 
 
