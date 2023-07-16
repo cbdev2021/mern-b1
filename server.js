@@ -15,6 +15,11 @@ connectDB();
 
 const app = express();
 
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', 'https://mern-f1.vercel.app'); // Reemplaza con tu dominio permitido
+  next();
+});
+
 
 app.use(cors({
   //origin: ['https://localhost:3000', 'https://glittery-pasca-60dcc8.netlify.app','https://mern-f1.onrender.com'],
